@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    /* ✅ Target modern JS features */
+    "target": "ES2022",
+    /* ✅ Modern libraries */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    /* ✅ JS & TS support */
+    "allowJs": true,
+    "checkJs": false,
+    /* ✅ Type safety */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true,
+    /* ✅ Module resolution */
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    /* ✅ React / Next.js */
+    "jsx": "preserve",
+    "incremental": true,
+    /* ✅ Path alias */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    /* ✅ Plugins */
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "skipLibCheck": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
